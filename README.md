@@ -1,7 +1,10 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-URL : https://pokemon.natakraf.com/ (mobile version)
+
+## URLs
+APPS : https://pokemon.natakraf.com/ (mobile version)
+FIGMA : https://www.figma.com/file/SFDV2zZ3Psxdmzzu16B8Yq/Untitled?node-id=0%3A1
 
 ## Setup .env
 
