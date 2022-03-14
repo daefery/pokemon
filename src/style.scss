@@ -1,0 +1,191 @@
+#header{
+    .ui.menu{
+        border-radius: 0 !important;
+        border: none !important;
+        .item > .ui.floating.label{
+            top:40px;
+            left: 45px;
+        }
+
+        .item:focus,.item:hover{
+            background: transparent !important;
+        }
+    }
+}
+
+.ui.button{
+    border-radius: 50px !important;
+}
+
+.ui.primary.button{
+    background-color: #FFCB03 !important;
+    color: #4F4F4F !important;
+}
+
+div[color]:not(.detailWrapper){
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    img{
+        position: absolute !important;
+        top: 35px;
+        width: 105px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        right: 15px;
+    }
+    h3{
+        color: #4F4F4F !important;
+        text-transform: capitalize !important;
+        margin-bottom: 3px !important;
+    }
+
+    .ui.label{
+        color: #fafafa !important;
+    }
+
+    .ui.inverted.header{
+        color: #fafafa !important;
+    }
+}
+
+div[color=pink]:not(.detailWrapper){
+    background-image: url('./assets/images/bg_pink.svg');
+}
+
+div[color=black]:not(.detailWrapper){
+    background-image: url('./assets/images/bg_black.svg');
+}
+
+div[color=white]:not(.detailWrapper){
+    background-image: url('./assets/images/bg_white.svg');
+}
+
+div[color=red]:not(.detailWrapper){
+    background-image: url('./assets/images/bg_red.svg');
+}
+
+div[color=blue]:not(.detailWrapper){
+    background-image: url('./assets/images/bg_blue.svg');
+}
+
+div[color=yellow]:not(.detailWrapper){
+    background-image: url('./assets/images/bg_yellow.svg');
+}
+
+div[color=gray]:not(.detailWrapper){
+    background-image: url('./assets/images/bg_gray.svg');
+}
+
+div[color=purple]:not(.detailWrapper){
+    background-image: url('./assets/images/bg_purple.svg');
+}
+
+div[color=green]:not(.detailWrapper){
+    background-image: url('./assets/images/bg_green.svg');
+}
+
+div[color=brown]:not(.detailWrapper){
+    background-image: url('./assets/images/bg_brown.svg');
+}
+
+#content{
+    .contentWrapper{
+        padding-top: 85px;
+        min-height: 100vh;
+
+        .releaseBtn{
+            position: absolute;
+            bottom: 25px;
+            left: 20px;
+        }
+    }
+
+    .detailWrapper[color] > .ui.segment.bannerDetail{
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
+    .detailWrapper[color=pink] > .ui.segment.bannerDetail{
+        background-image: url('./assets/images/detail_bg_pink.svg');
+    }
+
+    .detailWrapper[color=green] > .ui.segment.bannerDetail{
+        background-image: url('./assets/images/detail_bg_green.svg');
+    }
+
+    .detailWrapper[color=black] > .ui.segment.bannerDetail{
+        background-image: url('./assets/images/detail_bg_black.svg');
+    }
+
+    .detailWrapper[color=white] > .ui.segment.bannerDetail{
+        background-image: url('./assets/images/detail_bg_white.svg');
+    }
+
+    .detailWrapper[color=blue] > .ui.segment.bannerDetail{
+        background-image: url('./assets/images/detail_bg_blue.svg');
+    }
+
+    .detailWrapper[color=yellow] > .ui.segment.bannerDetail{
+        background-image: url('./assets/images/detail_bg_yellow.svg');
+    }
+
+    .detailWrapper[color=purple] > .ui.segment.bannerDetail{
+        background-image: url('./assets/images/detail_bg_purple.svg');
+    }
+
+    .detailWrapper[color=brown] > .ui.segment.bannerDetail{
+        background-image: url('./assets/images/detail_bg_brown.svg');
+    }
+
+    .detailWrapper[color=gray] > .ui.segment.bannerDetail{
+        background-image: url('./assets/images/detail_bg_gray.svg');
+    }
+
+    .detailWrapper[color=red] > .ui.segment.bannerDetail{
+        background-image: url('./assets/images/detail_bg_red.svg');
+    }
+
+    .aboutTab, .baseStatTab, .evolutionTab, .movesTab{
+        padding-top: 10px;
+        .ui.segment{
+            border-radius: 10px;
+        }
+        p{
+            font-size: 16px;
+            color: #4F4F4F !important;
+        }
+    }
+
+    .evolutionTab{
+        .ui.grid{
+            .column:nth-child(2){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img.ui.bordered.image{
+                background-color: #2122241a;
+            }
+        }
+    }
+}
+
+#catchPokemonModal{
+    padding-bottom: 10px;
+}
+
+.pokeLoader{
+    animation-name: spin;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
